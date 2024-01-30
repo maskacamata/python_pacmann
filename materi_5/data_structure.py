@@ -199,3 +199,6 @@
 # group_size = distribute_user(n,k)
 # print(group_size)
 
+# soal 7 
+
+
