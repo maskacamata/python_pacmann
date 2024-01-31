@@ -199,6 +199,61 @@
 # group_size = distribute_user(n,k)
 # print(group_size)
 
-# soal 7 
+# # soal 7 summarize data with OOP
+# class Data:
+#     def __init__(self, dataList):
+#         self.data = dataList
+#         self.size = len(self.data)
+
+#     def read_data(self):
+#         print(self.data)
+
+#     def find_total(self):
+#         self.total_val = 0
+#         for i in range(self.size):
+#             self.total_val = self.total_val + self.data[i]
+#         return self.total_val
+    
+#     def find_average(self):
+#         self.average = self.total_val / self.size
+#         return self.average
+
+# try:
+#     datanya = [14,15,16,18,20,31]
+
+#     obj = Data(datanya)
+
+#     obj.read_data()
+#     total = obj.find_total()
+#     average = obj.find_average()
+    
+#     print(f"total: {total}")
+#     print(f"avg: {average}")
+
+# except Exception as e:
+#     print(e)
+
+# # soal 8 | function to find double promo
+# def find_double_promo(user_id, promo_a_status, promo_b_status):
+#     double_id = []
+
+#     for i in range(len(user_id)):
+#         if promo_a_status[i] == True and promo_b_status[i] == True:
+#             double_id.append(user_id[i])
+    
+#     if len(double_id) > 0:
+#         return double_id
+#     else:
+#         return None
+    
+# user_ID = ['a', 'b', 'c', 'd', 'e']
+# promo_A_status = [1, 1, 1, 1, 1]
+# promo_B_status = [0, 1, 1, 1, 1]
+
+# double_list = find_double_promo(user_ID, promo_A_status, promo_B_status)
+# print(double_list)
+
+# soal 9 | find duplicate person in reasearch
+
 
 
