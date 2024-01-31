@@ -1,4 +1,4 @@
-# latihan
+import pdb
 
 
 
@@ -253,7 +253,41 @@
 # double_list = find_double_promo(user_ID, promo_A_status, promo_B_status)
 # print(double_list)
 
-# soal 9 | find duplicate person in reasearch
+# # soal 9 | find duplicate person in reasearch
+# def find_duplicates(people_id, people_name):
+#     duplicates = []
+#     name_lower = []
 
+#     # ubah ke lower
+#     for i in range(len(people_name)):
+#         name_lower.append(people_name[i].lower())
+
+#     try:
+#         for i in range(len(people_id)):
+#             counts = name_lower.count(name_lower[i])
+#             # pdb.set_trace()
+#             if counts > 1:
+#                 duplicate = [people_id[i], people_name[i]]
+#                 duplicates.append(duplicate)
+#     except Exception as e:
+#         print(e)
+#     finally:
+#         return duplicates
+
+# people_ID = ['01', '02', '03', '04', '05', '06', '07']
+# people_name = [
+#     'Budi santoso',
+#     'Pramono Setiadi',
+#     'Rijal',
+#     'Dedi setiawan',
+#     'rijal',
+#     'Alesha Nur',
+#     'Dedi Setiawan'
+# ]
+
+# duplicates = find_duplicates(people_ID, people_name)
+# print(duplicates)
+
+# soal 10 | time to transport logistic
 
 
