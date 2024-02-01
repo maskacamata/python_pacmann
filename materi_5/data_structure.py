@@ -289,5 +289,47 @@ import pdb
 # print(duplicates)
 
 # soal 10 | time to transport logistic
+def calculate_duration(route, duration_table):
+    # buat dictionary berisi index route
+    total_distance = 0
+
+    route_dict = {}
+    for i in range(len(route)):
+        r_key = route_dict.get(route[i]) #cek sudah ada key nya belum
+        if r_key == None:
+            route_dict[route[i]] = i #jika belum ada, maka buat key baru
+    
+    # buat pasangan route
+    route_pair = []
+    for i in range(len(route)):
+        start = i
+        if i == (len(route)-1):
+            end_dest = 0
+        else:
+            end_dest = i + 1
+        route_pair.append((route[start], route[end_dest]))
+
+    for i in range(len(route_pair)):
+        key_1 = route_pair[i][0]
+        key_2 = route_pair[i][1]
+
+        row = route_dict[key_1]
+        col = route_dict[key_2]
+
+        total_distance += duration_table[row][col]
+    
+    print(route_dict)
+    print(route_pair)
+    print(total_distance)
+
+duration_table = [
+    [0, 1, 2, 3],
+    [1, 0, 4, 5],
+    [2, 4, 0, 6],
+    [3, 5, 6, 0]
+]
+route = 'ABCDCDBAB'
+
+calculate_duration(route, duration_table)
 
 
